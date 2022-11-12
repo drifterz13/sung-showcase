@@ -12,15 +12,29 @@ const { title } = Astro.props
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link
+      href='https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap'
       rel='stylesheet'
+    />
+    <link
       href='https://fonts.cdnfonts.com/css/blackgold?styles=43042'
+      rel='stylesheet'
     />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
-    <nav class='nav'></nav>
+    <header>
+      <nav>
+        <ul>
+          <li>Resume</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
     <slot />
   </body>
 </html>
@@ -36,9 +50,15 @@ const { title } = Astro.props
     );
   }
   html {
-    font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #191919;
+    background-color: var(--primary);
   }
+
+  body, p {
+    margin: 0;
+  }
+
   h1,
   h2,
   h3,
@@ -46,9 +66,26 @@ const { title } = Astro.props
   h5,
   h6 {
     font-family: 'BlackGold', sans-serif;
+	margin: 0;
   }
 
-  .nav {
-    height: 86px;
+  ul {
+    margin: 0;
+  }
+
+  nav > ul {
+    height: 116px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav > ul li {
+    flex-basis: 125px;
+    text-transform: uppercase;
+  }
+
+  nav > ul li:last-child {
+    flex-grow: 1;
   }
 </style>
