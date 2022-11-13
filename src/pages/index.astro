@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import profilePic from '../images/profile-pic.png'
 ---
 
 <Layout title='Sung Showcase'>
@@ -7,7 +8,7 @@ import Layout from '../layouts/Layout.astro'
     <section
       class='flex flex-wrap justify-center gap-4 bg-rainbow1 bg-no-repeat bg-transparent'
     >
-      <div class='basis-[580px] h-[500px] flex flex-col grow-0'>
+      <div class='basis-[580px] h-[435px] flex flex-col grow-0'>
         <h1 class='text-8xl leading-79 font-blackgold'>
           Hello <br /> I am Kasira
         </h1>
@@ -28,11 +29,19 @@ import Layout from '../layouts/Layout.astro'
           Portfolio
         </p>
         <figure
-          class='w-[208px] h-[298px] box-border rounded-[104px] border border-black'
+          class='w-[208px] h-[298px] box-border rounded-[104px] border border-black p-3'
         >
-          <img src='' alt='' />
+          <img src={profilePic} alt='Profile picture.' />
         </figure>
       </aside>
+    </section>
+
+    <section class='relative -top-6'>
+      <div class='flex items-center'>
+        <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
+        <h1 class='text-5xl uppercase font-blackgold px-7'>Projects</h1>
+        <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
+      </div>
     </section>
   </main>
 </Layout>
