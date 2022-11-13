@@ -24,9 +24,9 @@ const project2 = {
 <Layout title='Sung Showcase'>
   <main>
     <section
-      class='flex justify-center gap-4 bg-rainbow1 bg-no-repeat bg-transparent'
+      class='flex justify-center gap-4 bg-rainbow1 bg-no-repeat bg-transparent w-3/5 mx-auto'
     >
-      <div class='basis-[580px] h-[435px] flex flex-col grow-0'>
+      <div class='basis-[580px] h-[435px] flex flex-col grow-0 shrink-0'>
         <h1 class='text-8xl leading-79 font-blackgold'>
           Hello <br /> I am Kasira
         </h1>
@@ -79,10 +79,25 @@ const project2 = {
       />
     </section>
 
-    <section class='mt-20'>
+    <section class='mt-20 w-11/12 ml-auto'>
       <div class='flex items-center'>
         <h2 class='text-5xl font-blackgold uppercase px-7'>Contact</h2>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
+      </div>
+
+      <div class='grid grid-cols-2 grid-flow-row-dense my-11'>
+        <div class='col-span-1'>01</div>
+        <div class='col-span-1'>
+          <div class='flex flex-col gap-2'>
+            <h3 class='font-blackgold text-4xl uppercase'>Email address</h3>
+            <p class='text-xl'>kasira.jtwk@gmail.com</p>
+          </div>
+
+          <div class='flex flex-col gap-2 mt-12'>
+            <h3 class='font-blackgold text-4xl uppercase'>Phone number</h3>
+            <p class='text-xl'>(+66) 94 169 6654</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
