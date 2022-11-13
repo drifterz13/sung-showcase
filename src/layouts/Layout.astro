@@ -25,13 +25,19 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='bg-beige font-jamjuree text-black'>
+  <body class='bg-beige font-jamjuree text-black mx-10'>
     <header>
       <nav>
-        <ul class='h-28 list-none flex w-2/5 justify-around items-center px-6'>
-          <li class='basis-32 uppercase tracking-widest'>Resume</li>
-          <li class='basis-32 uppercase tracking-widest'>Projects</li>
-          <li class='basis-32 uppercase tracking-widest'>Contact</li>
+        <ul
+          class='h-28 list-none flex w-[980px] mx-auto justify-start items-center'
+        >
+          <li class='basis-32 text-center uppercase tracking-widest'>Resume</li>
+          <li class='basis-32 text-center uppercase tracking-widest'>
+            Projects
+          </li>
+          <li class='basis-32 text-center uppercase tracking-widest'>
+            Contact
+          </li>
         </ul>
       </nav>
     </header>

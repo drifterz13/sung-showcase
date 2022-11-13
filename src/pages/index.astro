@@ -3,11 +3,11 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Sung Showcase'>
-  <main class='m-auto p-6'>
+  <main>
     <section
-      class='h-406 grid grid-cols-3 bg-rainbow1 bg-no-repeat bg-transparent'
+      class='flex flex-wrap justify-center gap-4 bg-rainbow1 bg-no-repeat bg-transparent'
     >
-      <article class='col-span-2 m-auto w-[630px] h-[500px] flex flex-col'>
+      <div class='basis-[580px] h-[500px] flex flex-col grow-0'>
         <h1 class='text-8xl leading-79 font-blackgold'>
           Hello <br /> I am Kasira
         </h1>
@@ -21,9 +21,9 @@ import Layout from '../layouts/Layout.astro'
             blandit lorem nibh, at egestas felis pretium sed.
           </div>
         </div>
-      </article>
+      </div>
 
-      <aside class='col-span-1 mx-auto'>
+      <aside>
         <p class='text-xl uppercase text-center tracking-widest mb-2'>
           Portfolio
         </p>
