@@ -13,6 +13,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				rainbow1: "url('/src/images/rainbow1.png')",
+				rainbow2: "url('/src/images/rainbow2.png')",
+				rainbow3: "url('/src/images/rainbow3.png')",
 				star: "url('/src/images/star.png')"
 			},
 			letterSpacing: {

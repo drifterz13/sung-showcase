@@ -54,15 +54,36 @@ const project2 = {
       </aside>
     </section>
 
-    <section class='relative -top-6'>
+    <section
+      class='relative -top-6 bg-rainbow3 bg-no-repeat bg-transparent bg-right-bottom'
+    >
       <div class='flex items-center'>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
         <h2 class='text-5xl uppercase font-blackgold px-7'>Projects</h2>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
       </div>
 
-      <ProjectPreview {...project1} />
-      <ProjectPreview reverse {...project2} />
+      <ProjectPreview
+        className='bg-rainbow2 bg-no-repeat bg-transparent bg-contain bg-left-top'
+        title={project1.title}
+        description={project1.description}
+        imgSrc={project1.imgSrc}
+        alt={project1.alt}
+      />
+      <ProjectPreview
+        reverse
+        title={project2.title}
+        description={project2.description}
+        imgSrc={project2.imgSrc}
+        alt={project2.alt}
+      />
+    </section>
+
+    <section class='mt-20'>
+      <div class='flex items-center'>
+        <h2 class='text-5xl font-blackgold uppercase px-7'>Contact</h2>
+        <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
+      </div>
     </section>
   </main>
 </Layout>
