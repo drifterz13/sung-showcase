@@ -1,0 +1,28 @@
+---
+import clsx from 'clsx'
+
+export interface Props {
+  imgSrc: string
+  alt: string
+  reverse?: boolean
+  title: string
+  description: string
+}
+
+const { imgSrc, alt, title, description, reverse } = Astro.props
+---
+
+<article
+  class={clsx(
+    'flex justify-center items-center gap-28 mt-28',
+    reverse && 'flex-row-reverse'
+  )}
+>
+  <figure class='border border-black basis-[357px] h-[267px] p-2'>
+    <img src={imgSrc} alt={alt} />
+  </figure>
+  <article class='basis-[246px] my-auto'>
+    <h3 class='font-blackgold text-4xl mb-7'>{title}</h3>
+    <p>{description}</p>
+  </article>
+</article>

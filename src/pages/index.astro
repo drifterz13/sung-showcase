@@ -1,8 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import profilePic from '../images/profile-pic.png'
-import project1 from '../images/project1.png'
-import project2 from '../images/project2.png'
+import project1Img from '../images/project1.png'
+import project2Img from '../images/project2.png'
+import ProjectPreview from '../components/ProjectPreview.astro'
+
+const project1 = {
+  title: '01 Skinique',
+  description: 'An application for create a skincare routine as unique as you.',
+  imgSrc: project1Img,
+  alt: 'Project 1',
+}
+
+const project2 = {
+  title: '02 Skinique',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit lorem nibh, at egestas felis pretium sed.',
+  imgSrc: project2Img,
+  alt: 'Project 2',
+}
 ---
 
 <Layout title='Sung Showcase'>
@@ -45,34 +61,8 @@ import project2 from '../images/project2.png'
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
       </div>
 
-      <!-- region project1  -->
-      <article class='flex justify-center items-center gap-28 mt-28'>
-        <figure class='border border-black basis-[357px] h-[267px] p-2'>
-          <img src={project1} alt='Project 1' />
-        </figure>
-        <article class='basis-[246px] my-auto'>
-          <h3 class='font-blackgold text-4xl mb-7'>01 Skinique</h3>
-          <p>An application for create a skincare routine as unique as you.</p>
-        </article>
-      </article>
-      <!-- region project1 end -->
-
-      <!-- region project2  -->
-      <article
-        class='flex flex-row-reverse justify-center items-center gap-28 mt-28'
-      >
-        <figure class='border border-black basis-[357px] h-[267px] p-2'>
-          <img src={project2} alt='Project 2' />
-        </figure>
-        <article class='basis-[246px] my-auto'>
-          <h3 class='font-blackgold text-4xl mb-7'>02 Skinique</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            blandit lorem nibh, at egestas felis pretium sed.
-          </p>
-        </article>
-      </article>
-      <!-- region project2 end -->
+      <ProjectPreview {...project1} />
+      <ProjectPreview reverse {...project2} />
     </section>
   </main>
 </Layout>
