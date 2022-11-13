@@ -25,67 +25,16 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class='bg-beige font-jamjuree text-black'>
     <header>
       <nav>
-        <ul>
-          <li>Resume</li>
-          <li>Projects</li>
-          <li>Contact</li>
+        <ul class='h-28 list-none flex w-2/5 justify-around items-center px-6'>
+          <li class='basis-32 uppercase tracking-widest'>Resume</li>
+          <li class='basis-32 uppercase tracking-widest'>Projects</li>
+          <li class='basis-32 uppercase tracking-widest'>Contact</li>
         </ul>
       </nav>
     </header>
     <slot />
   </body>
 </html>
-<style is:global>
-  :root {
-    --primary: #f4f1e9;
-    --accent: 124, 58, 237;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      white 60%
-    );
-  }
-  html {
-    font-family: 'Bai Jamjuree', sans-serif;
-    color: #191919;
-    background-color: var(--primary);
-  }
-
-  body, p {
-    margin: 0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'BlackGold', sans-serif;
-	margin: 0;
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  nav > ul {
-    height: 116px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-
-  nav > ul li {
-    flex-basis: 125px;
-    text-transform: uppercase;
-  }
-
-  nav > ul li:last-child {
-    flex-grow: 1;
-  }
-</style>

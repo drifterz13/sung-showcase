@@ -3,100 +3,36 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Sung Showcase'>
-  <main>
-    <section>
-      <article class='introduce'>
-        <h1>Hello <br /> I am Kasira</h1>
-        <article class='info'>
-          <span class='star'></span>
-          <p class='description'>
+  <main class='m-auto p-6'>
+    <section
+      class='h-406 grid grid-cols-3 bg-rainbow1 bg-no-repeat bg-transparent'
+    >
+      <article class='col-span-2 m-auto w-[630px] h-[500px] flex flex-col'>
+        <h1 class='text-8xl leading-79 font-blackgold'>
+          Hello <br /> I am Kasira
+        </h1>
+        <div class='grid grid-cols-3 grow'>
+          <div
+            class='bg-star bg-no-repeat bg-transparent bg-top-center col-span-1'
+          >
+          </div>
+          <div class='col-span-2 mt-5 text-xl'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             blandit lorem nibh, at egestas felis pretium sed.
-          </p>
-        </article>
+          </div>
+        </div>
       </article>
 
-      <aside class='pic'>
-        <p>Portfolio</p>
-        <figure>
+      <aside class='col-span-1 mx-auto'>
+        <p class='text-xl uppercase text-center tracking-widest mb-2'>
+          Portfolio
+        </p>
+        <figure
+          class='w-[208px] h-[298px] box-border rounded-[104px] border border-black'
+        >
           <img src='' alt='' />
         </figure>
       </aside>
     </section>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-  }
-
-  main p {
-    font-size: 20px;
-  }
-
-  section:first-of-type {
-    height: 406px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    background-image: url('../images/bg1.png');
-    background-repeat: no-repeat;
-    background-color: transparent;
-  }
-
-  section:first-of-type > .introduce {
-    grid-column: span 2 / span 2;
-    margin: auto;
-    width: 630px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  section:first-of-type > .introduce > h1 {
-    font-size: 96px;
-    line-height: 79px;
-  }
-
-  article.info {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    flex-grow: 1;
-  }
-
-  article.info > .four-point-star {
-    grid-column: span 1 / span 1;
-  }
-
-  article.info > .description {
-    grid-column: span 2 / span 2;
-    margin-top: 20px;
-  }
-
-  aside.pic {
-    grid-column: span 1 / span 1;
-    margin: 0 auto;
-  }
-
-  aside.pic > p {
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  aside.pic > figure {
-    width: 208px;
-    height: 298px;
-    box-sizing: border-box;
-    border-radius: 104px;
-    border: 1px solid #191919;
-  }
-
-  .star {
-    background-image: url('../images/star.png');
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-position-x: center;
-    background-position-y: 10px;
-  }
-</style>
