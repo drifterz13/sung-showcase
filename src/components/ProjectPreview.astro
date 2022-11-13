@@ -15,7 +15,7 @@ const { className, imgSrc, alt, title, description, reverse } = Astro.props
 
 <article
   class={clsx(
-    'flex justify-center items-center gap-28 pt-28',
+    'flex max-sm:flex-wrap justify-center items-center gap-28 max-sm:gap-4 pt-28',
     className,
     reverse && 'flex-row-reverse'
   )}
@@ -25,6 +25,6 @@ const { className, imgSrc, alt, title, description, reverse } = Astro.props
   </figure>
   <article class='basis-[246px] my-auto'>
     <h3 class='font-blackgold text-4xl mb-7'>{title}</h3>
-    <p>{description}</p>
+    <p class="max-sm:text-center">{description}</p>
   </article>
 </article>

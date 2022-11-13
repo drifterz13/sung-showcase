@@ -25,11 +25,11 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='bg-beige font-jamjuree text-black'>
+  <body class='bg-beige font-jamjuree text-black overflow-x-hidden'>
     <header>
       <nav>
         <ul
-          class='h-28 list-none flex w-[980px] mx-auto justify-start items-center'
+          class='h-28 list-none flex w-[980px] max-sm:w-auto mx-auto justify-start max-sm:justify-around items-center'
         >
           <li class='basis-32 text-center uppercase tracking-widest'>Resume</li>
           <li class='basis-32 text-center uppercase tracking-widest'>
