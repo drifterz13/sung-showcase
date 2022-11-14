@@ -17,7 +17,8 @@ module.exports = {
 				rainbow3: "url('/src/images/rainbow3.png')",
 				rainbow4: "url('/src/images/rainbow4.png')",
 				star: "url('/src/images/star.png')",
-				arch: "url('/src/images/arch.png')"
+				arch: "url('/src/images/arch.png')",
+				frame: "url('/src/images/frame.png')"
 			},
 			letterSpacing: {
 				widest: '.2em'
