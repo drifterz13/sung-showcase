@@ -26,7 +26,9 @@ const project2 = {
     <section
       class='flex justify-center max-sm:flex-col-reverse max-sm:flex-wrap gap-4 bg-rainbow1 bg-no-repeat bg-transparent w-3/5 max-sm:w-auto mx-auto'
     >
-      <div class='basis-[580px] max-sm:basis-[531px] h-[435px] flex flex-col grow-0 shrink-0'>
+      <div
+        class='basis-[580px] max-sm:basis-[531px] h-[435px] flex flex-col grow-0 shrink-0'
+      >
         <h1 class='text-8xl leading-79 font-blackgold max-sm:text-center'>
           Hello <br /> I am Kasira
         </h1>
@@ -42,7 +44,7 @@ const project2 = {
         </div>
       </div>
 
-      <aside class="max-sm:mx-auto">
+      <aside class='max-sm:mx-auto'>
         <p class='text-xl uppercase text-center tracking-widest mb-2 sm:hidden'>
           Portfolio
         </p>
@@ -79,15 +81,23 @@ const project2 = {
       />
     </section>
 
-    <section class='mt-20 w-11/12 max-sm:w-auto ml-auto'>
-      <div class='flex items-center'>
-        <h2 class='text-5xl font-blackgold uppercase mx-7 max-sm:mx-3'>Contact</h2>
+    <section
+      class='mt-20 w-full float-right bg-rainbow4 bg-no-repeat bg-transparent bg-left-bottom'
+    >
+      <div class='flex items-center pl-20'>
+        <h2 class='text-5xl font-blackgold uppercase mx-7 max-sm:mx-3'>
+          Contact
+        </h2>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
       </div>
 
-      <div class='grid grid-cols-2 max-sm:grid-rows-2 grid-flow-row-dense my-11'>
-        <div class='col-span-1'></div>
-        <div class='col-span-1'>
+      <div class='flex flex-wrap justify-center gap-28 mt-11'>
+        <div
+          class='arch-container border border-black bg-arch bg-no-repeat bg-transparent bg-bottom-center'
+        >
+        </div>
+
+        <div class='my-auto'>
           <div class='flex flex-col gap-2'>
             <h3 class='font-blackgold text-4xl uppercase'>Email address</h3>
             <p class='text-xl'>kasira.jtwk@gmail.com</p>
@@ -101,4 +111,13 @@ const project2 = {
       </div>
     </section>
   </main>
+
+  <style>
+    .arch-container {
+      width: 357px;
+      height: 361px;
+      border-radius: 172px 172px 0px 0px;
+      padding: 48px 58px 0px 58px;
+    }
+  </style>
 </Layout>

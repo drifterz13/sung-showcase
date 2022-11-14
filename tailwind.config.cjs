@@ -15,13 +15,16 @@ module.exports = {
 				rainbow1: "url('/src/images/rainbow1.png')",
 				rainbow2: "url('/src/images/rainbow2.png')",
 				rainbow3: "url('/src/images/rainbow3.png')",
-				star: "url('/src/images/star.png')"
+				rainbow4: "url('/src/images/rainbow4.png')",
+				star: "url('/src/images/star.png')",
+				arch: "url('/src/images/arch.png')"
 			},
 			letterSpacing: {
 				widest: '.2em'
 			},
 			backgroundPosition: {
 				'top-center': 'top center',
+				'bottom-center': 'bottom center',
 			}
 		},
 	},
