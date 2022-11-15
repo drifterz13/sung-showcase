@@ -17,6 +17,8 @@ module.exports = {
 				rainbow3: "url('/src/images/rainbow3.png')",
 				rainbow4: "url('/src/images/rainbow4.png')",
 				star: "url('/src/images/star.png')",
+				lineright: "url('/src/images/lineright.png')",
+				lineleft: "url('/src/images/lineleft.png')",
 				arch: "url('/src/images/arch.png')",
 				frame: "url('/src/images/frame.png')"
 			},
