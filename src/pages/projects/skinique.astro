@@ -8,6 +8,7 @@ import painPoint1 from '../../images/pain-point-1.png'
 import painPoint2 from '../../images/pain-point-2.png'
 import painPoint3 from '../../images/pain-point-3.png'
 import painPoint4 from '../../images/pain-point-4.png'
+import PainPointCard from '../../components/PainPointCard.astro'
 ---
 
 <Layout title='Skinique - Project'>
@@ -63,67 +64,26 @@ import painPoint4 from '../../images/pain-point-4.png'
   <section class='mt-28'>
     <h1 class='text-6xl text-center text-orange font-semibold'>Pain Points</h1>
     <div class='mt-14 px-24 grid grid-rows-2 grid-cols-2 gap-x-14 gap-y-10'>
-      <article class='py-4 px-5 xl:py-8 xl:px-9 rounded-[48px] bg-white'>
-        <div class='grid grid-cols-2 gap-5'>
-          <img class='col-span-1' src={painPoint1} alt='Pain point 1' />
-          <div class='flex flex-col justify-between col-span-1'>
-            <div
-              class='p-2 bg-black text-white flex items-center justify-center rounded-[32px] h-8 w-16 xl:h-14 xl:w-28 box-border'
-            >
-              01
-            </div>
-            <p class='text-lg xl:text-2xl'>
-              ซื้อสกินแคร์ออนไลน์จาก หลายร้านทำให้ต้องเสียค่า ส่งหลายครั้ง
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class='py-4 px-5 xl:py-8 xl:px-9 rounded-[48px] bg-white'>
-        <div class='grid grid-cols-2 gap-10'>
-          <img src={painPoint2} alt='Pain point 2' />
-          <div class='flex flex-col justify-between col-span-1'>
-            <div
-              class='p-2 bg-black text-white flex items-center justify-center rounded-[32px] h-8 w-16 xl:h-14 xl:w-28 box-border'
-            >
-              02
-            </div>
-            <p class='text-lg xl:text-2xl'>
-              เลือกใช้สกินแคร์ไม่ตรงกับ สภาพผิวและปัญหาผิวที่มี
-              ทำให้รู้สึกไม่เห็นผล
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class='py-4 px-5 xl:py-8 xl:px-9 rounded-[48px] bg-white'>
-        <div class='grid grid-cols-2 gap-10'>
-          <img src={painPoint3} alt='Pain point 3' />
-          <div class='flex flex-col justify-between col-span-1'>
-            <div
-              class='p-2 bg-black text-white flex items-center justify-center rounded-[32px] h-8 w-16 xl:h-14 xl:w-28 box-border'
-            >
-              03
-            </div>
-            <p class='text-lg xl:text-2xl'>
-              เรียงลำดับการใช้สกินแคร์ ไม่ถูกต้อง ไม่รู้ว่าต้องใช้อะไร ก่อนหลัง
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class='py-4 px-5 xl:py-8 xl:px-9 rounded-[48px] bg-white'>
-        <div class='grid grid-cols-2 gap-10'>
-          <img src={painPoint4} alt='Pain point 4' />
-          <div class='flex flex-col justify-between col-span-1'>
-            <div
-              class='p-2 bg-black text-white flex items-center justify-center rounded-[32px] h-8 w-16 xl:h-14 xl:w-28 box-border'
-            >
-              04
-            </div>
-            <p class='text-lg xl:text-2xl'>
-              ใช้สกินแคร์ไม่สม่ำเสมอ ทำให้ไม่เห็นผลลัพธ์ที่ต่อเนื่อง
-            </p>
-          </div>
-        </div>
-      </article>
+      <PainPointCard
+        n='01'
+        content='ซื้อสกินแคร์ออนไลน์จาก หลายร้านทำให้ต้องเสียค่า ส่งหลายครั้ง'
+        imgSrc={painPoint1}
+      />
+      <PainPointCard
+        n='02'
+        imgSrc={painPoint2}
+        content='เลือกใช้สกินแคร์ไม่ตรงกับ สภาพผิวและปัญหาผิวที่มีทำให้รู้สึกไม่เห็นผล'
+      />
+      <PainPointCard
+        n='03'
+        imgSrc={painPoint3}
+        content='เรียงลำดับการใช้สกินแคร์ ไม่ถูกต้อง ไม่รู้ว่าต้องใช้อะไร ก่อนหลัง'
+      />
+      <PainPointCard
+        n='04'
+        imgSrc={painPoint4}
+        content='ใช้สกินแคร์ไม่สม่ำเสมอ ทำให้ไม่เห็นผลลัพธ์ที่ต่อเนื่อง'
+      />
     </div>
   </section>
 
