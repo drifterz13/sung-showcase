@@ -28,7 +28,9 @@ import painPoint4 from '../../images/pain-point-4.png'
   </section>
 
   <section class='mt-28'>
-    <h1 class='text-6xl text-center text-orange'>Roles & Responsibilities</h1>
+    <h1 class='text-6xl text-center text-orange font-semibold'>
+      Roles & Responsibilities
+    </h1>
     <div class='flex gap-20 justify-center items-center mt-14'>
       <article class='flex flex-col items-center gap-4'>
         <img src={roleIllustrator} alt='Role illustrator' />
@@ -59,7 +61,7 @@ import painPoint4 from '../../images/pain-point-4.png'
   </section>
 
   <section class='mt-28'>
-    <h1 class='text-6xl text-center text-orange'>Pain Points</h1>
+    <h1 class='text-6xl text-center text-orange font-semibold'>Pain Points</h1>
     <div class='mt-14 px-24 grid grid-rows-2 grid-cols-2 gap-x-14 gap-y-10'>
       <article class='py-4 px-5 xl:py-8 xl:px-9 rounded-[48px] bg-white'>
         <div class='grid grid-cols-2 gap-5'>
@@ -124,4 +126,51 @@ import painPoint4 from '../../images/pain-point-4.png'
       </article>
     </div>
   </section>
+
+  <section class='mt-28'>
+    <div class='grid grid-cols-2 h-[750px] px-24'>
+      <div
+        class='col-span-1 bg-iphoneMockup2 bg-transparent bg-no-repeat bg-contain'
+      >
+      </div>
+      <div class='col-span-1'>
+        <h1 class='text-orange font-semibold text-6xl text-center'>
+          What is Skinique?
+        </h1>
+
+        <div
+          class='py-10 px-16 mt-6 bg-white rounded-[54px] text-lg xl:text-2xl'
+        >
+          <ul class='app-definitions'>
+            <li>รวบรวมผลิตภัณฑ์บำรุงผิวต่างๆ ไว้ในแอพเดียว</li>
+            <li>
+              ช่วยให้คุณสามารถเลือก Skincare ให้ตรงกับสภาพผิวและปัญหาผิวต่างๆ
+              ได้อย่างตรงจุด
+            </li>
+            <li>
+              ช่วยคุณจัด Skincare Routine เรียงลำดับขั้นตอนการใช้ได้อย่างถูกต้อง
+            </li>
+            <li>
+              บันทึกและติดตามผลลัพธ์การใช้งานในแต่ละวันช่วยให้
+              เห็นถึงความเปลี่ยนแปลงของสภาพผิวอย่างต่อเนื่อง
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .app-definitions {
+    list-style-type: '\2713';
+  }
+
+  .app-definitions li {
+    text-indent: 10px;
+  }
+
+  .app-definitions li:not(:last-child) {
+    margin-bottom: 2.25rem;
+  }
+</style>

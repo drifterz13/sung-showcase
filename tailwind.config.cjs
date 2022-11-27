@@ -23,6 +23,7 @@ module.exports = {
 				arch: "url('/src/images/arch.png')",
 				frame: "url('/src/images/frame.png')",
 				iphoneMockup: "url('/src/images/iphone-mockup.svg')",
+				iphoneMockup2: "url('/src/images/iphone-mockup-2.svg')",
 			},
 			letterSpacing: {
 				widest: '.2em'
