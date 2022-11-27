@@ -1,0 +1,22 @@
+---
+import skiniqueLogo from '../../images/skinique-logo.png'
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='Skinique - Project'>
+  <section
+    class='h-screen box-border w-full bg-purple pt-10 px-14 grid grid-cols-4'
+  >
+    <div class='flex flex-col text-orange col-span-2'>
+      <img class='h-[108px] w-[108px]' src={skiniqueLogo} alt='Skinique logo' />
+      <div class='mt-auto mb-20'>
+        <h1 class='text-[128px] font-arima capitalize'>Skinique</h1>
+        <p class='text-3xl'>Create a skincare routine as unique as you.</p>
+      </div>
+    </div>
+    <div
+      class='col-span-2 bg-iphoneMockup bg-transparent bg-no-repeat bg-contain bg-bottom'
+    >
+    </div>
+  </section>
+</Layout>

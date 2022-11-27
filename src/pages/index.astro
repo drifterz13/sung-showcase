@@ -4,12 +4,14 @@ import profilePic from '../images/profile-pic.png'
 import project1Img from '../images/project1.png'
 import project2Img from '../images/project2.png'
 import ProjectPreview from '../components/ProjectPreview.astro'
+import Header from '../layouts/Header.astro'
 
 const project1 = {
   title: '01 Skinique',
   description: 'An application for create a skincare routine as unique as you.',
   imgSrc: project1Img,
   alt: 'Project 1',
+  slug: 'skinique',
 }
 
 const project2 = {
@@ -21,7 +23,8 @@ const project2 = {
 }
 ---
 
-<Layout title='Sung'>
+<Layout title="Kasira's Protfolio">
+  <Header />
   <main>
     <section
       class='flex justify-center max-sm:flex-col-reverse max-sm:flex-wrap gap-4 bg-rainbow1 bg-no-repeat bg-transparent w-3/5 max-sm:w-auto mx-auto'
@@ -59,7 +62,7 @@ const project2 = {
     </section>
 
     <section
-      id="projects"
+      id='projects'
       class='relative -top-6 bg-rainbow3 bg-no-repeat bg-transparent bg-right-bottom'
     >
       <div class='flex items-center'>
@@ -74,6 +77,7 @@ const project2 = {
         description={project1.description}
         imgSrc={project1.imgSrc}
         alt={project1.alt}
+        slug={project1.slug}
       />
       <ProjectPreview
         reverse
@@ -81,6 +85,7 @@ const project2 = {
         description={project2.description}
         imgSrc={project2.imgSrc}
         alt={project2.alt}
+        slug=''
       />
     </section>
 

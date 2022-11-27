@@ -8,9 +8,11 @@ export interface Props {
   title: string
   description: string
   className?: string
+  slug: string
 }
 
-const { className, imgSrc, alt, title, description, reverse } = Astro.props
+const { className, imgSrc, alt, title, description, reverse, slug } =
+  Astro.props
 ---
 
 <article
@@ -21,10 +23,16 @@ const { className, imgSrc, alt, title, description, reverse } = Astro.props
   )}
 >
   <figure class='border border-black basis-[357px] h-[267px] p-2'>
-    <img src={imgSrc} alt={alt} />
+    <a href={`/projects/${slug}`}>
+      <img src={imgSrc} alt={alt} />
+    </a>
   </figure>
   <article class='basis-[246px]'>
-    <h3 class='font-blackgold text-4xl mb-7'>{title}</h3>
-    <p class="max-sm:text-center">{description}</p>
+    <h3 class='font-blackgold text-4xl mb-7'>
+      <a href={`/projects/${slug}`}>
+        {title}
+      </a>
+    </h3>
+    <p class='max-sm:text-center'>{description}</p>
   </article>
 </article>

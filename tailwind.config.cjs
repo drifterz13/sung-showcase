@@ -5,11 +5,14 @@ module.exports = {
 		extend: {
 			colors: {
 				beige: '#f4f1e9',
-				black: '#191919'
+				black: '#191919',
+				purple: '#eadaff',
+				orange: '#e56430'
 			},
 			fontFamily: {
 				blackgold: ['BlackGold', 'sans-serif'],
-				jamjuree: ['Bai Jamjuree', 'sans-serif']
+				nunito: ['Nunito', 'sans-serif'],
+				arima: ['Arima Madurai', 'cursive']
 			},
 			backgroundImage: {
 				rainbow1: "url('/src/images/rainbow1.png')",
@@ -17,10 +20,9 @@ module.exports = {
 				rainbow3: "url('/src/images/rainbow3.png')",
 				rainbow4: "url('/src/images/rainbow4.png')",
 				star: "url('/src/images/star.png')",
-				lineright: "url('/src/images/lineright.png')",
-				lineleft: "url('/src/images/lineleft.png')",
 				arch: "url('/src/images/arch.png')",
-				frame: "url('/src/images/frame.png')"
+				frame: "url('/src/images/frame.png')",
+				iphoneMockup: "url('/src/images/iphone-mockup.png')"
 			},
 			letterSpacing: {
 				widest: '.2em'
