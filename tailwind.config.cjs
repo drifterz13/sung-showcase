@@ -6,7 +6,12 @@ module.exports = {
 			colors: {
 				beige: '#f4f1e9',
 				black: '#191919',
-				purple: '#eadaff',
+				"purple-100": '#eadaff',
+				"purple-200": "#e0c8ff",
+				"purple-300": "#cBA3ff",
+				"purple-400": "#b77fff",
+				"purple-500": "#a25aff",
+				dark_purple: '#9747ff',
 				orange: '#e56430'
 			},
 			fontFamily: {
