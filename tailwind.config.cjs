@@ -31,7 +31,8 @@ module.exports = {
 				frame: "url('/src/images/frame.png')",
 				iphoneMockup: "url('/src/images/iphone-mockup.svg')",
 				iphoneMockup2: "url('/src/images/iphone-mockup-2.svg')",
-				empathy_map: "url('/src/images/empathy-map.png')",
+				feeling: "url('/src/images/feeling.png')",
+
 			},
 			letterSpacing: {
 				widest: '.2em'

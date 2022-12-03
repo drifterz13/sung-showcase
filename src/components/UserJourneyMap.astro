@@ -1,0 +1,148 @@
+---
+import JourneyMapContent from './JourneyMapContent.astro'
+import JourneyMapHead from './JourneyMapHead.astro'
+import JourneyMapListContent from './JourneyMapListContent.astro'
+
+export interface Props {}
+
+const actionStages = [
+  'สนใจเลือกซื้อสกินแคร์',
+  'สำรวจเกี่ยวกับผิวของตัวเอง',
+  'เปรียบเทียบสกินแคร์ที่มีในท้องตลาด',
+  'ตัดสินใจเลือกสกินแคร์',
+  'ติดตามผลลัพธ์การใช้สกินแคร์',
+]
+
+const doingStages = [
+  ['ค้นหา Google', 'ดูวิดิโอ Youtube', 'อ่านบทความเดี่ยวกับสกินแคร์'],
+  [
+    'สังเกตสภาพผิวของตัวเอง',
+    'เรียนรู้การเลือกสกินแคร์ให้ตรงปัญหาผิว',
+    'ดูส่วนผสมสกินแคร์',
+  ],
+  ['ดูรีวิวจากแหล่งต่างๆ', 'อ่านข้อมูลเปรียบเทียบ'],
+  ['สั่งซื้อออนไลน์หรือไปซื้อที่หน้าร้าน', 'เรียงลำดับการใช้สกินแคร์'],
+  ['เปรียบเทียบผลลัพธ์ก่อนและหลังใช้'],
+]
+
+const thinkStages = [
+  ['สกินแคร์มีกี่ประเภท อะไรบ้าง'],
+  ['เรามีสภาพผิวแบบไหน', 'ปัญหาผิวที่กังวลคืออะไร', 'ควรใช้สกินแคร์อะไรบ้าง'],
+  ['รีวิวเชื่อถือได้ไหม', 'สกินแคร์แต่ละตัวต่างกันอย่างไร'],
+  ['สั่งซื้อ จ่ายเงินยังไง', 'เรียงลำดับการใช้ถูกหรือไม่'],
+  ['สกินแคร์ที่ใช้อยู่ได้ผมหรือไม่'],
+]
+
+const opportunitieStages = [
+  ['แบ่งประเภทสกินแคร์ให้ชัดเจนเข้าใจง่าย'],
+  ['สร้างรายการสกินแคร์ที่เหมาะกับผู้ใช้'],
+  ['เพิ่มรีวิวจากผู้ใช้งานจริง'],
+  ['รวบรวมสินค้าไว้ที่เดียวไม่ต้องเสียเวลาไปหลายร้านหรือเสียค่าส่งหลายครั้ง'],
+  ['มีบันทึกประจำวันเห็นทำให้เห็นผลลัพธ์ที่ชัดเจน'],
+]
+---
+
+<div class='grid grid-cols-6 grid-rows-[7] gap-x-3 gap-y-4'>
+  <div class='col-span-3 row-span-1'>
+    <div class='bg-white py-4 px-7 rounded-3xl border border-black h-full'>
+      <div class='text-2xl text-dark_purple'>Scenario</div>
+      <p class='font-mitr text-xl'>
+        สนใจเลือกซื้อสกินแคร์ และอยากสร้าง Skincare Routine ของตัวเอง
+      </p>
+    </div>
+  </div>
+  <div class='col-span-3 row-span-1'>
+    <div class='bg-white py-4 px-7 rounded-3xl border border-black h-full'>
+      <div class='text-2xl text-dark_purple'>Goals & Expectations</div>
+      <ul class='font-mitr text-xl'>
+        <li class='list-disc list-inside'>
+          สามารถเลือกสกินแคร์ได้ตรงสภาพผิวและปัญหาผิวที่กังวล
+        </li>
+        <li class='list-disc list-inside'>
+          มี Skincare Routine ของตัวเองที่สามมารถติดตามผลลัพธ์ได้
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <div class='rounded-3xl bg-black text-white p-5 text-center'>Stage</div>
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapHead title='Consider' directionIndicator />
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapHead title='Explore' directionIndicator />
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapHead title='Compare' directionIndicator />
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapHead title='Select' directionIndicator />
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapHead title='Track' directionIndicator />
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapContent content='Actions' highlight />
+  </div>
+
+  {
+    actionStages.map((stage) => (
+      <div class='col-span-1 row-span-1'>
+        <JourneyMapContent content={stage} />
+      </div>
+    ))
+  }
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapContent content='Doing' highlight />
+  </div>
+
+  {
+    doingStages.map((stages) => (
+      <div class='col-span-1 row-span-1'>
+        <JourneyMapListContent lists={stages} />
+      </div>
+    ))
+  }
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapContent content='Thinking' highlight />
+  </div>
+
+  {
+    thinkStages.map((stages) => (
+      <div class='col-span-1 row-span-1'>
+        <JourneyMapListContent lists={stages} />
+      </div>
+    ))
+  }
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapContent content='Feeling' highlight />
+  </div>
+
+  <div
+    class='col-span-5 row-span-1 rounded-3xl bg-white bg-feeling bg-no-repeat bg-contain bg-center'
+  >
+  </div>
+
+  <div class='col-span-1 row-span-1'>
+    <JourneyMapContent content='Opportunities' highlight />
+  </div>
+
+  {
+    opportunitieStages.map((stages) => (
+      <div class='col-span-1 row-span-1'>
+        <JourneyMapListContent lists={stages} />
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,20 @@
+---
+export interface Props {
+  content: string
+  highlight?: boolean
+}
+
+import clsx from 'clsx'
+const { content, highlight } = Astro.props
+---
+
+<div
+  class={clsx(
+    'rounded-3xl h-[180px] grid place-content-center text-sm xl:text-base p-4',
+    highlight ? 'bg-purple-300 font-nunito' : 'bg-white font-mitr'
+  )}
+>
+  <p class='text-center'>
+    {content}
+  </p>
+</div>
