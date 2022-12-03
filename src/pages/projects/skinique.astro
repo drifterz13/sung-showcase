@@ -4,19 +4,9 @@ import Layout from '../../layouts/Layout.astro'
 import roleIllustrator from '../../images/role-illus.svg'
 import projectTimeIllustrator from '../../images/project-time-illus.svg'
 import toolsUsedIllustrator from '../../images/tools-used-illus.svg'
-import painPoint1 from '../../images/pain-point-1.png'
-import painPoint2 from '../../images/pain-point-2.png'
-import painPoint3 from '../../images/pain-point-3.png'
-import painPoint4 from '../../images/pain-point-4.png'
-import PainPointCard from '../../components/PainPointCard.astro'
-import DesignProcessCard from '../../components/DesignProcessCard.astro'
-import process1 from '../../images/process-1.png'
-import process2 from '../../images/process-2.png'
-import process3 from '../../images/process-3.png'
-import process4 from '../../images/process-4.png'
-import process5 from '../../images/process-5.png'
-import Stepper from '../../components/Stepper.astro'
 import InterviewTable from '../../components/InterviewTable.astro'
+import DesignProcess from '../../components/DesignProcess.astro'
+import PainPoints from '../../components/PainPoints.astro'
 ---
 
 <Layout title='Skinique - Project'>
@@ -71,28 +61,7 @@ import InterviewTable from '../../components/InterviewTable.astro'
 
   <section class='mt-28'>
     <h1 class='text-6xl text-center text-orange font-semibold'>Pain Points</h1>
-    <div class='mt-14 px-24 grid grid-rows-2 grid-cols-2 gap-x-14 gap-y-10'>
-      <PainPointCard
-        n='01'
-        content='ซื้อสกินแคร์ออนไลน์จาก หลายร้านทำให้ต้องเสียค่า ส่งหลายครั้ง'
-        imgSrc={painPoint1}
-      />
-      <PainPointCard
-        n='02'
-        imgSrc={painPoint2}
-        content='เลือกใช้สกินแคร์ไม่ตรงกับ สภาพผิวและปัญหาผิวที่มีทำให้รู้สึกไม่เห็นผล'
-      />
-      <PainPointCard
-        n='03'
-        imgSrc={painPoint3}
-        content='เรียงลำดับการใช้สกินแคร์ ไม่ถูกต้อง ไม่รู้ว่าต้องใช้อะไร ก่อนหลัง'
-      />
-      <PainPointCard
-        n='04'
-        imgSrc={painPoint4}
-        content='ใช้สกินแคร์ไม่สม่ำเสมอ ทำให้ไม่เห็นผลลัพธ์ที่ต่อเนื่อง'
-      />
-    </div>
+    <PainPoints />
   </section>
 
   <section class='mt-28'>
@@ -133,58 +102,7 @@ import InterviewTable from '../../components/InterviewTable.astro'
       <h1 class='text-orange font-semibold text-6xl text-center'>
         Design Process
       </h1>
-      <div class='mt-14'>
-        <div class='grid grid-cols-5 gap-x-2 gap-y-10'>
-          <figure class='m-auto'>
-            <img src={process1} alt='Process 1 Illustrator' />
-          </figure>
-          <figure class='m-auto'>
-            <img src={process2} alt='Process 2 Illustrator' />
-          </figure>
-          <figure class='m-auto'>
-            <img src={process3} alt='Process 3 Illustrator' />
-          </figure>
-          <figure class='m-auto'>
-            <img src={process4} alt='Process 4 Illustrator' />
-          </figure>
-          <figure class='m-auto'>
-            <img src={process5} alt='Process 5 Illustrator' />
-          </figure>
-
-          <Stepper />
-
-          <DesignProcessCard
-            step='01'
-            title='Emphatize'
-            caption='User Interview'
-            className='bg-purple-100'
-          />
-          <DesignProcessCard
-            step='02'
-            title='Define'
-            caption='User Persona, User Journey Map'
-            className='bg-purple-200'
-          />
-          <DesignProcessCard
-            step='03'
-            title='Ideate'
-            caption='User Flow'
-            className='bg-purple-300'
-          />
-          <DesignProcessCard
-            step='04'
-            title='Prototype'
-            caption='Wireframe'
-            className='bg-purple-400'
-          />
-          <DesignProcessCard
-            step='05'
-            title='Design'
-            caption='Desing System'
-            className='bg-purple-500'
-          />
-        </div>
-      </div>
+      <DesignProcess />
     </div>
   </section>
 

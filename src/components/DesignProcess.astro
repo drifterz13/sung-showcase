@@ -1,0 +1,64 @@
+---
+import process1 from '../images/process-1.png'
+import process2 from '../images/process-2.png'
+import process3 from '../images/process-3.png'
+import process4 from '../images/process-4.png'
+import process5 from '../images/process-5.png'
+import DesignProcessCard from './DesignProcessCard.astro'
+import Stepper from './Stepper.astro'
+
+export interface Props {}
+---
+
+<div class='mt-14'>
+  <div class='grid grid-cols-5 gap-x-2 gap-y-10'>
+    <figure class='m-auto'>
+      <img src={process1} alt='Process 1 Illustrator' />
+    </figure>
+    <figure class='m-auto'>
+      <img src={process2} alt='Process 2 Illustrator' />
+    </figure>
+    <figure class='m-auto'>
+      <img src={process3} alt='Process 3 Illustrator' />
+    </figure>
+    <figure class='m-auto'>
+      <img src={process4} alt='Process 4 Illustrator' />
+    </figure>
+    <figure class='m-auto'>
+      <img src={process5} alt='Process 5 Illustrator' />
+    </figure>
+
+    <Stepper />
+
+    <DesignProcessCard
+      step='01'
+      title='Emphatize'
+      caption='User Interview'
+      className='bg-purple-100'
+    />
+    <DesignProcessCard
+      step='02'
+      title='Define'
+      caption='User Persona, User Journey Map'
+      className='bg-purple-200'
+    />
+    <DesignProcessCard
+      step='03'
+      title='Ideate'
+      caption='User Flow'
+      className='bg-purple-300'
+    />
+    <DesignProcessCard
+      step='04'
+      title='Prototype'
+      caption='Wireframe'
+      className='bg-purple-400'
+    />
+    <DesignProcessCard
+      step='05'
+      title='Design'
+      caption='Desing System'
+      className='bg-purple-500'
+    />
+  </div>
+</div>
