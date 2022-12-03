@@ -17,7 +17,8 @@ module.exports = {
 			fontFamily: {
 				blackgold: ['BlackGold', 'sans-serif'],
 				nunito: ['Nunito', 'sans-serif'],
-				arima: ['Arima Madurai', 'cursive']
+				arima: ['Arima Madurai', 'cursive'],
+				mitr: ['Mitr', 'sans-serif']
 			},
 			backgroundImage: {
 				rainbow1: "url('/src/images/rainbow1.png')",
