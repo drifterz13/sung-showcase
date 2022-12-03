@@ -12,7 +12,8 @@ module.exports = {
 				"purple-400": "#b77fff",
 				"purple-500": "#a25aff",
 				dark_purple: '#9747ff',
-				orange: '#e56430'
+				orange: '#e56430',
+				sky: '#c8dbff'
 			},
 			fontFamily: {
 				blackgold: ['BlackGold', 'sans-serif'],
@@ -30,6 +31,7 @@ module.exports = {
 				frame: "url('/src/images/frame.png')",
 				iphoneMockup: "url('/src/images/iphone-mockup.svg')",
 				iphoneMockup2: "url('/src/images/iphone-mockup-2.svg')",
+				empathy_map: "url('/src/images/empathy-map.png')",
 			},
 			letterSpacing: {
 				widest: '.2em'
