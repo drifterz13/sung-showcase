@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title: string
+  lists: string[]
+}
+
+const { title, lists } = Astro.props
+---
+
+<div class='flex flex-col gap-5'>
+  <div class='py-2 px-8 rounded-[32px] text-white text-2xl bg-black w-fit'>
+    {title}
+  </div>
+
+  <ul class='ml-5 font-mitr text-2xl'>
+    {lists.map((list) => <li class='list-disc'>{list}</li>)}
+  </ul>
+</div>

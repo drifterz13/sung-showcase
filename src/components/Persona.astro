@@ -1,0 +1,62 @@
+---
+import PersonaCard from './PersonaCard.astro'
+import personaImg from '../images/persona.png'
+
+export interface Props {}
+---
+
+<div class='grid grid-cols-3 grid-rows-2 gap-y-4 gap-x-3'>
+  <div class='col-span-1 row-span-2 rounded-[54px] bg-white p-10'>
+    <div class='flex flex-col gap-6'>
+      <img src={personaImg} alt='Persona' />
+      <p class='font-mitr text-orange text-3xl text-center'>
+        “ทุกคนสวยได้ <br />
+        ในแบบของตัวเอง”
+      </p>
+    </div>
+  </div>
+  <div class='col-span-1 p-6 bg-white rounded-[54px]'>
+    <PersonaCard
+      title='Demographic'
+      lists={[
+        'พนักงานออฟฟิศตำแหน่ง Designer',
+        'อายุ 25 ปี โสด',
+        'รายได้ 30,000 บาทต่อเดือน',
+        'ปัจจุบันเช่าคอนโดอยู่ในกรุงเทพ',
+      ]}
+    />
+  </div>
+  <div class='col-span-1 p-6 bg-white rounded-[54px]'>
+    <PersonaCard
+      title='Background'
+      lists={[
+        'พนักงานออฟฟิศ รักสวยรักงาม ชื่นชอบในการดูแลตัวเอง',
+        'ผิวหน้ามัน เป็นสิวง่าย',
+        'มีนิสัยขี้ลืมเป็นประจำ',
+      ]}
+    />
+  </div>
+  <div class='col-span-1 p-6 bg-white rounded-[54px]'>
+    <PersonaCard
+      title='Lifestyle'
+      lists={[
+        'ชอบดูรีวิวจาก Beauty Blocker',
+        'ชอบซื้อของออนไลน์',
+        'ชอบลองอะไรใหม่ๆ ตามกระแส',
+        'ชอบการการแต่งหน้า ดูแลตัวเอง',
+        'รู้จักใช้เงิน ชอบความคุ้มค่า ',
+      ]}
+    />
+  </div>
+  <div class='col-span-1 p-6 bg-white rounded-[54px]'>
+    <PersonaCard
+      title='Needs & Goal'
+      lists={[
+        'Skincare Routine ที่เหมาะกับตัวเอง',
+        'ใช้สกินแคร์ให้ได้ผลสูงสุด',
+        'มีผิวที่ดีขึ้น แก้ไขปัญหาผิวได้ตรงจุด',
+        'ต้องการซื้อสกินแคร์จากแหล่งเดียวจะได้ไม่เสียค่าส่งหลายรอบ',
+      ]}
+    />
+  </div>
+</div>
