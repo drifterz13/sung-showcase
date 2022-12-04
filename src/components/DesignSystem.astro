@@ -1,0 +1,72 @@
+---
+import Color from './Color.astro'
+import iconsImg from '../images/icons.png'
+import buttonsImg from '../images/buttons.png'
+import Tag from './Tag.astro'
+
+export interface Props {}
+---
+
+<div class='p-16 rounded-[54px] bg-sky'>
+  <div class='py-12 px-24 bg-white rounded-[36px] grid grid-cols-2'>
+    <div class='col-span-1 grid grid-rows-3'>
+      <div class='flex flex-col gap-8 row-span-1'>
+        <h2 class='text-[32px]'>Typography</h2>
+        <div class='flex flex-col gap-3'>
+          <div class='text-2xl font-semibold'>H1_Nunito_SemiBold_24px</div>
+          <div class='text-xl font-semibold'>H2_Nunito_Bold_20px</div>
+          <div class='text-base font-bold'>H3_Nunito_Bold_16px</div>
+          <div class='text-sm font-normal'>S1_Nunito_Regular_14px</div>
+          <div class='text-xs font-normal'>S2_Nunito_Light_12px</div>
+          <div class='text-xxs font-normal'>S3_Nunito_Regular_10px</div>
+        </div>
+      </div>
+
+      <div class='flex flex-col gap-8 row-span-2'>
+        <h2 class='text-[32px]'>Color</h2>
+
+        <div class='flex flex-col gap-4'>
+          <Color color='midnight' caption='Primary_Midnight#141414' />
+          <Color color='ivory' caption='Primary_Ivory#F2F1ED' />
+          <Color color='orange' caption='Primary_Orange#FA9764' />
+          <Color color='dark_orange' caption='Primary_Dark Orange#E56430' />
+          <Color color='purple' caption='Secondary_Purple#DDC9FF' />
+          <Color color='blue' caption='Secondary_Blue#C8DBFF' />
+          <Color color='grey' caption='Secondary_Grey#D9D9D9' />
+        </div>
+      </div>
+    </div>
+
+    <div class='col-span-1 flex flex-col gap-16'>
+      <div class='flex flex-col gap-5'>
+        <h2 class='text-[32px]'>Icons</h2>
+        <div>
+          <img src={iconsImg} alt='icons' />
+        </div>
+      </div>
+
+      <div class='flex flex-col gap-5'>
+        <h2 class='text-[32px]'>Tags</h2>
+        <div class='grid grid-flow-col auto-cols-max grid-rows-2 gap-3'>
+          <Tag name='Oily Skin' variant='primary' />
+          <Tag name='Oily Skin' variant='secondary' />
+          <Tag name='Paraben Free' variant='primary' />
+          <Tag name='Paraben Free' variant='secondary' />
+          <Tag name='Acne & Blemishes' variant='primary' />
+          <Tag name='Acne & Blemishes' variant='secondary' />
+          <Tag name='Dark Spots' variant='primary' />
+          <Tag name='Dark Spots' variant='secondary' />
+        </div>
+      </div>
+
+      <div class='flex flex-col gap-5'>
+        <h2 class='text-[32px]'>Buttons</h2>
+        <div
+          class='rounded-[36px] bg-leukocyte_white pt-14 px-14 pb-6 flex justify-center'
+        >
+          <img src={buttonsImg} alt="App's buttons" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

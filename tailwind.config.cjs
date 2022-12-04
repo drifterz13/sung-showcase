@@ -12,8 +12,14 @@ module.exports = {
 				"purple-400": "#b77fff",
 				"purple-500": "#a25aff",
 				dark_purple: '#9747ff',
+				primary_orange: '#fa9764',
 				orange: '#e56430',
-				sky: '#c8dbff'
+				sky: '#c8dbff',
+				leukocyte_white: '#f2f1ed',
+				grey: '#d9d9d9'
+			},
+			fontSize: {
+				'xxs': '10px'
 			},
 			fontFamily: {
 				blackgold: ['BlackGold', 'sans-serif'],

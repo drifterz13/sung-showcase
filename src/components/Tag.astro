@@ -1,0 +1,21 @@
+---
+import clsx from 'clsx'
+
+export interface Props {
+  name: string
+  variant: 'primary' | 'secondary'
+}
+
+const { variant, name } = Astro.props
+---
+
+<div
+  class={clsx(
+    'p-2 rounded-lg w-fit h-fit text-sm text-center inline',
+    variant === 'primary'
+      ? ' bg-primary_orange text-white'
+      : ' bg-grey border border-grey text-black'
+  )}
+>
+  {name}
+</div>

@@ -1,0 +1,43 @@
+---
+export interface Props {
+  caption: string
+  color:
+    | 'midnight'
+    | 'ivory'
+    | 'orange'
+    | 'dark_orange'
+    | 'purple'
+    | 'blue'
+    | 'grey'
+}
+
+const { caption, color } = Astro.props
+
+const hexColor = (() => {
+  switch (color) {
+    case 'midnight':
+      return '#141414'
+    case 'ivory':
+      return '#f2f1ed'
+    case 'orange':
+      return '#fa9764'
+    case 'dark_orange':
+      return '#e56430'
+    case 'purple':
+      return '#ddc9ff'
+    case 'blue':
+      return '#c8dbff'
+    case 'grey':
+      return '#d9d9d9'
+  }
+})()
+---
+
+<div class='flex gap-7 items-center'>
+  <div
+    class='w-[84px] h-[84px] box-border rounded-[19px]'
+    style={`background:${hexColor};`}
+  >
+  </div>
+  <p class='text-2xl font-normal'>{caption}</p>
+</div>
