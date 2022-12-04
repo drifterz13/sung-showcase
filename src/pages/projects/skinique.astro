@@ -10,6 +10,7 @@ import PainPoints from '../../components/PainPoints.astro'
 import EmpathyMap from '../../components/EmpathyMap.astro'
 import Persona from '../../components/Persona.astro'
 import UserJourneyMap from '../../components/UserJourneyMap.astro'
+import appMapImg from '../../images/app-map.png'
 ---
 
 <Layout title='Skinique - Project'>
@@ -145,6 +146,15 @@ import UserJourneyMap from '../../components/UserJourneyMap.astro'
       </h1>
       <div class='mt-14'>
         <UserJourneyMap />
+      </div>
+    </div>
+  </section>
+
+  <section class='mt-28'>
+    <div class='px-24'>
+      <h1 class='text-orange font-semibold text-6xl text-center'>App Map</h1>
+      <div class='mt-14'>
+        <img src={appMapImg} alt='App map' />
       </div>
     </div>
   </section>
