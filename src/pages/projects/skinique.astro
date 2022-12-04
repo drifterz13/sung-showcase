@@ -13,30 +13,35 @@ import UserJourneyMap from '../../components/UserJourneyMap.astro'
 import appMapImg from '../../images/app-map.png'
 import wireFrameImg from '../../images/wire-frame.png'
 import DesignSystem from '../../components/DesignSystem.astro'
+import Section from '../../components/Section.astro'
 ---
 
 <Layout title='Skinique - Project'>
   <section
-    class='h-screen box-border w-full bg-purple-100 pt-10 px-14 grid grid-cols-4'
+    class='h-screen box-border w-full bg-purple-100 pt-10 px-14 grid grid-cols-4 max-sm:grid-cols-1 max-sm:h-auto'
   >
     <div class='flex flex-col text-orange col-span-2'>
       <img class='h-[108px] w-[108px]' src={skiniqueLogo} alt='Skinique logo' />
-      <div class='mt-auto mb-20'>
-        <h1 class='text-[128px] font-arima capitalize'>Skinique</h1>
-        <p class='text-3xl'>Create a skincare routine as unique as you.</p>
+      <div class='mt-auto mb-20 max-sm:mt-20'>
+        <h1 class='text-[128px] font-arima capitalize max-sm:text-6xl'>
+          Skinique
+        </h1>
+        <p class='text-3xl max-sm:text-xl'>
+          Create a skincare routine as unique as you.
+        </p>
       </div>
     </div>
     <div
-      class='col-span-2 bg-iphoneMockup bg-transparent bg-no-repeat bg-contain bg-bottom'
+      class='col-span-2 bg-iphoneMockup bg-transparent bg-no-repeat bg-contain bg-bottom max-sm:hidden'
     >
     </div>
   </section>
 
-  <section class='mt-28'>
+  <Section>
     <h1 class='text-4xl text-center text-orange font-semibold'>
       Roles & Responsibilities
     </h1>
-    <div class='flex gap-20 justify-center items-center mt-14'>
+    <div class='flex max-sm:flex-col gap-20 justify-center items-center mt-14'>
       <article class='flex flex-col items-center gap-4'>
         <img src={roleIllustrator} alt='Role illustrator' />
         <div class='text-center w-full'>
@@ -63,19 +68,17 @@ import DesignSystem from '../../components/DesignSystem.astro'
         </div>
       </article>
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-4xl text-center text-orange font-semibold'>
-        Problem Statement
-      </h1>
-      <PainPoints />
-    </div>
-  </section>
+  <Section>
+    <h1 class='text-4xl text-center text-orange font-semibold'>
+      Problem Statement
+    </h1>
+    <PainPoints />
+  </Section>
 
-  <section class='mt-28'>
-    <div class='grid grid-cols-2 mx-48 h-[450px]'>
+  <Section>
+    <div class='grid grid-cols-2 h-[450px] max-md:grid-cols-1'>
       <div
         class='col-span-1 bg-iphoneMockup2 bg-transparent bg-no-repeat bg-contain bg-center'
       >
@@ -103,87 +106,69 @@ import DesignSystem from '../../components/DesignSystem.astro'
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-center'>
-        Design Process
-      </h1>
-      <DesignProcess />
-    </div>
-  </section>
+  <Section>
+    <h1 class='text-orange font-semibold text-4xl text-center'>
+      Design Process
+    </h1>
+    <DesignProcess />
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-left'>
-        User Interview
-      </h1>
-      <div class='mt-14'>
-        <InterviewTable />
-      </div>
+  <Section className='max-md:hidden'>
+    <h1 class='text-orange font-semibold text-4xl text-left'>User Interview</h1>
+    <div class='mt-14'>
+      <InterviewTable />
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-left'>Empathy map</h1>
-      <div class='mt-14'>
-        <EmpathyMap />
-      </div>
+  <Section>
+    <h1 class='text-orange font-semibold text-4xl text-left'>Empathy map</h1>
+    <div class='mt-14'>
+      <EmpathyMap />
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-left'>User Persona</h1>
-      <div class='mt-14'>
-        <Persona />
-      </div>
+  <Section>
+    <h1 class='text-orange font-semibold text-4xl text-left'>User Persona</h1>
+    <div class='mt-14'>
+      <Persona />
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-left'>
-        User JourneyMap
-      </h1>
-      <div class='mt-14'>
-        <UserJourneyMap />
-      </div>
+  <Section className='max-md:hidden'>
+    <h1 class='text-orange font-semibold text-4xl text-left'>
+      User JourneyMap
+    </h1>
+    <div class='mt-14'>
+      <UserJourneyMap />
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-center'>App Map</h1>
-      <div class='mt-14'>
-        <img src={appMapImg} alt='App map' />
-      </div>
+  <Section>
+    <h1 class='text-orange font-semibold text-4xl text-center'>App Map</h1>
+    <div class='mt-14'>
+      <img src={appMapImg} alt='App map' />
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-center'>
-        User Flow / Wireframe
-      </h1>
-      <div class='mt-14'>
-        <img src={wireFrameImg} alt='User flow / Wireframe' />
-      </div>
+  <Section>
+    <h1 class='text-orange font-semibold text-4xl text-center'>
+      User Flow / Wireframe
+    </h1>
+    <div class='mt-14'>
+      <img src={wireFrameImg} alt='User flow / Wireframe' />
     </div>
-  </section>
+  </Section>
 
-  <section class='mt-28'>
-    <div class='mx-48'>
-      <h1 class='text-orange font-semibold text-4xl text-center'>
-        Design System
-      </h1>
-      <div class='mt-14'>
-        <DesignSystem />
-      </div>
+  <Section>
+    <h1 class='text-orange font-semibold text-4xl text-center'>
+      Design System
+    </h1>
+    <div class='mt-14'>
+      <DesignSystem />
     </div>
-  </section>
+  </Section>
 
   <style>
     .app-definitions {

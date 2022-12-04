@@ -1,0 +1,13 @@
+---
+import clsx from 'clsx'
+
+export interface Props {
+  className?: string
+}
+
+const { className } = Astro.props
+---
+
+<section class={clsx('my-28 mx-48 max-md:mx-3 max-md:my-14', className)}>
+  <slot />
+</section>
