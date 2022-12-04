@@ -13,17 +13,17 @@ const { step, title, caption, className } = Astro.props
 
 <div
   class={clsx(
-    'flex flex-col gap-5 items-center relative rounded-[32px] px-5 pb-2 xl:px-8 xl:pb-5 box-border h-[200px] bg-p',
+    'flex flex-col items-center justify-center relative rounded-[32px] px-5 pb-2 box-border h-[180px]',
     className
   )}
 >
-  <div
-    class='step bg-white text-xl xl:text-2xl text-center relative top-0 w-20 h-10'
-  >
+  <div class='step bg-white text-center absolute top-0 w-20 h-10'>
     {step}
   </div>
-  <div class='text-xl xl:text-2xl font-semibold'>{title}</div>
-  <div class='text-lg xl:text-xl text-center'>{caption}</div>
+  <div class='text-center'>
+    <div class='font-semibold'>{title}</div>
+    <div class='text-center'>{caption}</div>
+  </div>
 </div>
 
 <style>

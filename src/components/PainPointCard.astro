@@ -8,18 +8,16 @@ export interface Props {
 const { imgSrc, content, n } = Astro.props
 ---
 
-<article
-  class='py-4 px-5 xl:py-8 xl:px-9 rounded-[48px] bg-white border border-black'
->
-  <div class='grid grid-cols-2 gap-5'>
-    <img class='col-span-1' src={imgSrc} alt='Pain point 1' />
-    <div class='flex flex-col justify-between col-span-1'>
+<article class='py-4 px-5 rounded-xl bg-white shadow-lg'>
+  <div class='flex gap-5'>
+    <img src={imgSrc} alt='Pain point 1' height='150' width='150' />
+    <div class='flex flex-col justify-between'>
       <div
-        class='p-2 bg-black text-white flex items-center justify-center rounded-[32px] h-8 w-16 xl:h-14 xl:w-28 box-border'
+        class='p-1 bg-black text-white flex items-center justify-center rounded-[32px] w-16 h-fit box-border'
       >
         {n}
       </div>
-      <p class='text-lg xl:text-2xl font-mitr'>
+      <p class='font-mitr'>
         {content}
       </p>
     </div>

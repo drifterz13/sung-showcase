@@ -33,15 +33,15 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <h1 class='text-6xl text-center text-orange font-semibold'>
+    <h1 class='text-4xl text-center text-orange font-semibold'>
       Roles & Responsibilities
     </h1>
     <div class='flex gap-20 justify-center items-center mt-14'>
       <article class='flex flex-col items-center gap-4'>
         <img src={roleIllustrator} alt='Role illustrator' />
         <div class='text-center w-full'>
-          <div class='text-3xl font-semibold'>My Role</div>
-          <div class='text-2xl'>Ux/Ui Designer</div>
+          <div class='text-2xl font-semibold'>My Role</div>
+          <div class='text-base'>Ux/Ui Designer</div>
         </div>
       </article>
       <article class='flex flex-col items-center gap-5'>
@@ -51,46 +51,48 @@ import DesignSystem from '../../components/DesignSystem.astro'
           alt='Project time illustrator'
         />
         <div class='text-center w-full'>
-          <div class='text-3xl font-semibold'>Project time</div>
-          <div class='text-2xl'>September 2022</div>
+          <div class='text-2xl font-semibold'>Project time</div>
+          <div class='text-base'>September 2022</div>
         </div>
       </article>
       <article class='flex flex-col items-center gap-4'>
         <img src={toolsUsedIllustrator} alt='Tools used illustrator' />
         <div class='text-center w-full'>
-          <div class='text-3xl font-semibold'>Tool used</div>
-          <div class='text-2xl'>Figma</div>
+          <div class='text-2xl font-semibold'>Tool used</div>
+          <div class='text-base'>Figma</div>
         </div>
       </article>
     </div>
   </section>
 
   <section class='mt-28'>
-    <h1 class='text-6xl text-center text-orange font-semibold'>Pain Points</h1>
-    <PainPoints />
+    <div class='mx-48'>
+      <h1 class='text-4xl text-center text-orange font-semibold'>
+        Pain Points
+      </h1>
+      <PainPoints />
+    </div>
   </section>
 
   <section class='mt-28'>
-    <div class='grid grid-cols-2 px-24'>
+    <div class='grid grid-cols-2 mx-48 h-[450px]'>
       <div
         class='col-span-1 bg-iphoneMockup2 bg-transparent bg-no-repeat bg-contain bg-center'
       >
       </div>
-      <div class='col-span-1'>
-        <h1 class='text-orange font-semibold text-6xl text-center'>
-          What is Skinique?
+      <div class='col-span-1 grid place-content-center'>
+        <h1 class='text-orange font-semibold text-4xl text-center'>
+          Project Goals
         </h1>
 
-        <div
-          class='py-10 px-16 mt-6 bg-white rounded-[54px] text-lg xl:text-2xl'
-        >
+        <div class='py-10 px-16 mt-6 bg-white rounded-[54px]'>
           <ul class='app-definitions font-mitr'>
-            <li>รวบรวมผลิตภัณฑ์บำรุงผิวต่างๆ ไว้ในแอพเดียว</li>
-            <li>
+            <li class='mb-4'>รวบรวมผลิตภัณฑ์บำรุงผิวต่างๆ ไว้ในแอพเดียว</li>
+            <li class='mb-4'>
               ช่วยให้คุณสามารถเลือก Skincare ให้ตรงกับสภาพผิวและปัญหาผิวต่างๆ
               ได้อย่างตรงจุด
             </li>
-            <li>
+            <li class='mb-4'>
               ช่วยคุณจัด Skincare Routine เรียงลำดับขั้นตอนการใช้ได้อย่างถูกต้อง
             </li>
             <li>
@@ -104,8 +106,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-center'>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-center'>
         Design Process
       </h1>
       <DesignProcess />
@@ -113,8 +115,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-left'>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-left'>
         User Interview
       </h1>
       <div class='mt-14'>
@@ -124,8 +126,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-left'>Empathy map</h1>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-left'>Empathy map</h1>
       <div class='mt-14'>
         <EmpathyMap />
       </div>
@@ -133,8 +135,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-left'>User Persona</h1>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-left'>User Persona</h1>
       <div class='mt-14'>
         <Persona />
       </div>
@@ -142,8 +144,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-left'>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-left'>
         User JourneyMap
       </h1>
       <div class='mt-14'>
@@ -153,8 +155,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-center'>App Map</h1>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-center'>App Map</h1>
       <div class='mt-14'>
         <img src={appMapImg} alt='App map' />
       </div>
@@ -162,8 +164,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-center'>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-center'>
         User Flow / Wireframe
       </h1>
       <div class='mt-14'>
@@ -173,8 +175,8 @@ import DesignSystem from '../../components/DesignSystem.astro'
   </section>
 
   <section class='mt-28'>
-    <div class='px-24'>
-      <h1 class='text-orange font-semibold text-6xl text-center'>
+    <div class='mx-48'>
+      <h1 class='text-orange font-semibold text-4xl text-center'>
         Design System
       </h1>
       <div class='mt-14'>
@@ -189,11 +191,7 @@ import DesignSystem from '../../components/DesignSystem.astro'
     }
 
     .app-definitions li {
-      text-indent: 10px;
-    }
-
-    .app-definitions li:not(:last-child) {
-      margin-bottom: 2.25rem;
+      text-indent: 8px;
     }
   </style>
 </Layout>
