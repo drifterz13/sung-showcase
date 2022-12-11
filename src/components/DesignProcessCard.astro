@@ -4,11 +4,10 @@ import clsx from 'clsx'
 export interface Props {
   step: string
   title: string
-  caption: string
   className: string
 }
 
-const { step, title, caption, className } = Astro.props
+const { step, title, className } = Astro.props
 ---
 
 <div
@@ -20,9 +19,11 @@ const { step, title, caption, className } = Astro.props
   <div class='step bg-white text-center w-20 h-10 max-sm:w-10 max-sm:h-5'>
     {step}
   </div>
-  <div class='text-center h-full grid place-content-center'>
+  <div class='text-center h-full grid place-content-start pt-5'>
     <div class='font-semibold'>{title}</div>
-    <div class='text-center max-sm:hidden'>{caption}</div>
+    <div class='text-center max-sm:hidden'>
+      <slot name='caption' />
+    </div>
   </div>
 </div>
 

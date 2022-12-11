@@ -30,35 +30,26 @@ export interface Props {}
 
     <Stepper />
 
-    <DesignProcessCard
-      step='01'
-      title='Emphatize'
-      caption='User Interview'
-      className='bg-purple-100'
-    />
-    <DesignProcessCard
-      step='02'
-      title='Define'
-      caption='User Persona, User Journey Map'
-      className='bg-purple-200'
-    />
-    <DesignProcessCard
-      step='03'
-      title='Ideate'
-      caption='User Flow'
-      className='bg-purple-300'
-    />
-    <DesignProcessCard
-      step='04'
-      title='Prototype'
-      caption='Wireframe'
-      className='bg-purple-400'
-    />
-    <DesignProcessCard
-      step='05'
-      title='Design'
-      caption='Desing System'
-      className='bg-purple-500'
-    />
+    <DesignProcessCard step='01' title='Emphatize' className='bg-purple-100'>
+      <ul slot='caption'>
+        <li>User Interview</li>
+        <li>User Map</li>
+      </ul>
+    </DesignProcessCard>
+    <DesignProcessCard step='02' title='Define' className='bg-purple-200'>
+      <ul slot='caption'>
+        <li>User Persona</li>
+        <li>User JourneyMap</li>
+      </ul>
+    </DesignProcessCard>
+    <DesignProcessCard step='03' title='Ideate' className='bg-purple-300'>
+      <span slot='caption'>User Flow</span>
+    </DesignProcessCard>
+    <DesignProcessCard step='04' title='Prototype' className='bg-purple-400'>
+      <span slot='caption'>Wireframe</span>
+    </DesignProcessCard>
+    <DesignProcessCard step='05' title='Design' className='bg-purple-500'>
+      <span slot='caption'>Desing System</span>
+    </DesignProcessCard>
   </div>
 </div>
