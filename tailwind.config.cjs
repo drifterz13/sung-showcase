@@ -22,7 +22,6 @@ module.exports = {
 				'xxs': '10px'
 			},
 			fontFamily: {
-				blackgold: ['BlackGold', 'sans-serif'],
 				nunito: ['Nunito', 'sans-serif'],
 				arima: ['Arima Madurai', 'cursive'],
 				mitr: ['Mitr', 'sans-serif']

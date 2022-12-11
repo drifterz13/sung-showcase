@@ -32,7 +32,7 @@ const project2 = {
       <div
         class='basis-[580px] max-sm:basis-[531px] h-[435px] flex flex-col grow-0 shrink-0'
       >
-        <h1 class='text-8xl leading-79 font-blackgold max-sm:text-center'>
+        <h1 class='text-8xl leading-79 max-sm:text-center'>
           Hello <br /> I am Kasira
         </h1>
         <div class='grid grid-cols-3 grow'>
@@ -67,7 +67,7 @@ const project2 = {
     >
       <div class='flex items-center'>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
-        <h2 class='text-5xl uppercase font-blackgold px-7'>Projects</h2>
+        <h2 class='text-5xl uppercase px-7'>Projects</h2>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
       </div>
 
@@ -94,9 +94,7 @@ const project2 = {
       class='mt-20 w-full float-right bg-rainbow4 bg-no-repeat bg-transparent bg-left-bottom'
     >
       <div class='flex items-center pl-20'>
-        <h2 class='text-5xl font-blackgold uppercase mx-7 max-sm:mx-3'>
-          Contact
-        </h2>
+        <h2 class='text-5xl uppercase mx-7 max-sm:mx-3'>Contact</h2>
         <hr class='grow border border-black border-l-0 border-r-0 border-b-0' />
       </div>
 
@@ -108,12 +106,12 @@ const project2 = {
 
         <div class='my-auto'>
           <div class='flex flex-col gap-2'>
-            <h3 class='font-blackgold text-4xl uppercase'>Email address</h3>
+            <h3 class='text-4xl uppercase'>Email address</h3>
             <p class='text-xl'>kasira.jtwk@gmail.com</p>
           </div>
 
           <div class='flex flex-col gap-2 mt-12'>
-            <h3 class='font-blackgold text-4xl uppercase'>Phone number</h3>
+            <h3 class='text-4xl uppercase'>Phone number</h3>
             <p class='text-xl'>(+66) 94 169 6654</p>
           </div>
         </div>
@@ -122,6 +120,21 @@ const project2 = {
   </main>
 
   <style>
+    @font-face {
+      font-family: 'BlackGold';
+      src: url('/fonts/BlackGoldRegular.woff2') format('woff2'),
+        url('/fonts/BlackGoldRegular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'BlackGold', sans-serif;
+    }
+
     .arch-container {
       width: 357px;
       height: 361px;
