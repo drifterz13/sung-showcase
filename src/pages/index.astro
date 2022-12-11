@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro'
 import profilePic from '../images/profile-pic.png'
 import project1Img from '../images/project1.png'
-import project2Img from '../images/project2.png'
 import ProjectPreview from '../components/ProjectPreview.astro'
 import Header from '../layouts/Header.astro'
 
@@ -12,14 +11,6 @@ const project1 = {
   imgSrc: project1Img,
   alt: 'Project 1',
   slug: 'skinique',
-}
-
-const project2 = {
-  title: '02 Skinique',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit lorem nibh, at egestas felis pretium sed.',
-  imgSrc: project2Img,
-  alt: 'Project 2',
 }
 ---
 
@@ -32,7 +23,7 @@ const project2 = {
       <div
         class='basis-[580px] max-sm:basis-[531px] h-[435px] flex flex-col grow-0 shrink-0'
       >
-        <h1 class='text-8xl leading-79 max-sm:text-center'>
+        <h1 id='greeting' class='text-8xl leading-79 max-sm:text-center'>
           Hello <br /> I am Kasira
         </h1>
         <div class='grid grid-cols-3 grow'>
@@ -78,14 +69,6 @@ const project2 = {
         imgSrc={project1.imgSrc}
         alt={project1.alt}
         slug={project1.slug}
-      />
-      <ProjectPreview
-        reverse
-        title={project2.title}
-        description={project2.description}
-        imgSrc={project2.imgSrc}
-        alt={project2.alt}
-        slug=''
       />
     </section>
 
