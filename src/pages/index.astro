@@ -24,7 +24,7 @@ const project1 = {
         class='basis-[580px] max-sm:basis-[531px] h-[435px] flex flex-col grow-0 shrink-0'
       >
         <h1 id='greeting' class='text-8xl leading-79 max-sm:text-center'>
-          Hello <br /> I am Kasira
+          <!-- Hello <br /> I am Kasira -->
         </h1>
         <div class='grid grid-cols-3 grow'>
           <div
@@ -126,3 +126,24 @@ const project1 = {
     }
   </style>
 </Layout>
+
+<script>
+  window.addEventListener('DOMContentLoaded', async () => {
+    const content = 'Hello\nI am Kasira'.split('')
+
+    let cursor = 0
+    const t = setInterval(() => {
+      const el = document.querySelector('#greeting') as HTMLElement
+      const char = content[cursor]
+      if (char === undefined) {
+        clearInterval(t)
+
+        return
+      }
+
+      el.innerHTML += char === '\n' ? '<br />' : char
+
+      cursor += 1
+    }, 80)
+  })
+</script>
