@@ -15,6 +15,7 @@ import wireFrameImg from '../../images/wire-frame.png'
 import DesignSystem from '../../components/DesignSystem.astro'
 import Section from '../../components/Section.astro'
 import OverallDesign from '../../components/OverallDesign.astro'
+import ResearchInfo from '../../components/ResearchInfo.astro'
 ---
 
 <Layout title='Skinique - Project'>
@@ -42,6 +43,21 @@ import OverallDesign from '../../components/OverallDesign.astro'
     <h1 class='text-4xl text-center text-orange font-semibold'>
       Roles & Responsibilities
     </h1>
+    <div class='my-14 flex gap-8 mx-16 mx-sm:mx-0'>
+      <h2 class='text-4xl text-orange font-semibold max-sm:text-2xl'>
+        Overview
+      </h2>
+      <p class='font-mitr'>
+        เนื่องจากปัจจุบันมีสกินแคร์ในท้องตลาดเป็นจำนวนมาก
+        อีกทั้งยังเป็นเรื่องที่ค่อนข้างเฉพาะบุคคลเนื่องจากแต่ละคนมีปัญหาและสภาพผิวที่ไม่เหมือนกัน
+        อาจทำให้ผู้ใช้เกิดความสับสนในการเลือกใช้สกินแคร์
+        ดังนั้นการหาผลิตภัณฑ์ที่ใช่สำหรับตัวเอง จึงเป็นเรื่องสำคัญ
+        จึงเป็นที่มาของ Skinique แอปพลิเคชัน e-commerce
+        ที่รวบรวมสกินแคร์และผลิตภัณฑ์บำรุงผิวต่างๆ
+        ที่ช่วยให้ผู้ใช้สามารถเลือกสกินแคร์ให้เหมาะกับผิวตัวเอง
+        และเรียงลำดับการใชได้อย่างถูกต้อง
+      </p>
+    </div>
     <div class='flex max-sm:flex-col gap-20 justify-center items-center mt-14'>
       <article class='flex flex-col items-center gap-4'>
         <img src={roleIllustrator} alt='Role illustrator' />
@@ -116,31 +132,62 @@ import OverallDesign from '../../components/OverallDesign.astro'
     <DesignProcess />
   </Section>
 
+  <Section>
+    <ResearchInfo />
+  </Section>
+
   <Section className='max-md:hidden'>
-    <h1 class='text-orange font-semibold text-4xl text-left'>User Interview</h1>
+    <h1 class='text-orange font-semibold text-4xl text-center'>
+      User Interview
+    </h1>
+    <div class='mt-14'>
+      <p class='font-mitr text-center w-3/4 mx-auto'>
+        ทำการสัมภาษณ์ตัวอย่างกลุ่มผู้ใช้งาน
+        เพื่อทำความเข้าใจผู้ใช้ในเชิงลึกได้อย่างตรงจุดและรวดเร็ว <br />
+        โดยเน้นคำถามเกี่ยวประสบการณ์การใช้สกินแคร์ ตั้งแต่สภาพผิวเบื้องต้น วิธีการเลือกซื้อไปจนถึงขั้นตอนการใช้ผลิตภัณฑ์
+      </p>
+    </div>
     <div class='mt-14'>
       <InterviewTable />
     </div>
   </Section>
 
   <Section>
-    <h1 class='text-orange font-semibold text-4xl text-left'>Empathy map</h1>
+    <h1 class='text-orange font-semibold text-4xl text-center'>Empathy map</h1>
+    <div class='mt-14'>
+      <p class='font-mitr text-center w-3/4 mx-auto'>
+        เจาะลึกพฤติกรรมและทัศนคติขงผู้ใช้ด้วย Empathy Map <br />
+        ผู้ใช้ส่วนใหญ่สับสนเกี่ยวกับตัวเลือกของผลิตภัณฑ์ที่มีเป็นจำนวนมาก และส่วนผสมของผลิตภัณฑ์
+      </p>
+    </div>
     <div class='mt-14'>
       <EmpathyMap />
     </div>
   </Section>
 
   <Section>
-    <h1 class='text-orange font-semibold text-4xl text-left'>User Persona</h1>
+    <h1 class='text-orange font-semibold text-4xl text-center'>User Persona</h1>
+    <div class='mt-14'>
+      <p class='font-mitr text-center'>
+        จากข้อมูลที่วิเคราะห์มาช่วยกำหนดกลุ่มเป้าหมาย
+        โดยได้จัดทำตัวอย่างของกลุ่มเป้าหมายที่คาดว่ามีแนวโน้มในการใช้แอปพลิเคชันมากที่สุด
+      </p>
+    </div>
     <div class='mt-14'>
       <Persona />
     </div>
   </Section>
 
   <Section className='max-md:hidden'>
-    <h1 class='text-orange font-semibold text-4xl text-left'>
+    <h1 class='text-orange font-semibold text-4xl text-center'>
       User JourneyMap
     </h1>
+    <div class='mt-14'>
+      <p class='font-mitr text-center w-3/4 mx-auto'>
+        ทำความเข้าใจการใช้งาน
+        และทำความเข้าใจปัญหาที่เกิดขึ้นเพื่อค้นหาวิธีแก้ปัญหาให้ตรงจุด
+      </p>
+    </div>
     <div class='mt-14'>
       <UserJourneyMap />
     </div>
