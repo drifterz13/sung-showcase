@@ -16,6 +16,7 @@ import DesignSystem from '../../components/DesignSystem.astro'
 import Section from '../../components/Section.astro'
 import OverallDesign from '../../components/OverallDesign.astro'
 import ResearchInfo from '../../components/ResearchInfo.astro'
+import iphoneMockup2 from '../../images/iphone-mockup-2.svg'
 ---
 
 <Layout title='Skinique - Project'>
@@ -43,7 +44,7 @@ import ResearchInfo from '../../components/ResearchInfo.astro'
     <h1 class='text-4xl text-center text-orange font-semibold'>
       Roles & Responsibilities
     </h1>
-    <div class='my-14 flex gap-8 mx-16 mx-sm:mx-0'>
+    <div class='my-14 flex gap-8 mx-sm:mx-0'>
       <h2 class='text-4xl text-orange font-semibold max-sm:text-2xl'>
         Overview
       </h2>
@@ -58,7 +59,7 @@ import ResearchInfo from '../../components/ResearchInfo.astro'
         และเรียงลำดับการใชได้อย่างถูกต้อง
       </p>
     </div>
-    <div class='flex max-sm:flex-col gap-20 justify-center items-center mt-14'>
+    <div class='flex max-sm:flex-col gap-20 justify-between items-center mt-14'>
       <article class='flex flex-col items-center gap-4'>
         <img src={roleIllustrator} alt='Role illustrator' />
         <div class='text-center w-full'>
@@ -95,11 +96,12 @@ import ResearchInfo from '../../components/ResearchInfo.astro'
   </Section>
 
   <Section>
-    <div class='grid grid-cols-2 h-[450px] max-md:grid-cols-1'>
-      <div
-        class='col-span-1 bg-iphoneMockup2 bg-transparent bg-no-repeat bg-contain bg-center'
-      >
-      </div>
+    <div class='grid grid-cols-2 max-md:grid-cols-1'>
+      <img
+        src={iphoneMockup2}
+        alt='Skinique Iphone mockup'
+        class='col-span-1'
+      />
       <div class='col-span-1 grid place-content-center'>
         <h1 class='text-orange font-semibold text-4xl text-center'>
           Project Goals
@@ -196,7 +198,7 @@ import ResearchInfo from '../../components/ResearchInfo.astro'
   <Section>
     <h1 class='text-orange font-semibold text-4xl text-center'>App Map</h1>
     <div class='mt-14'>
-      <img class="mx-auto" src={appMapImg} alt='App map' />
+      <img class='w-full' src={appMapImg} alt='App map' />
     </div>
   </Section>
 
@@ -205,7 +207,7 @@ import ResearchInfo from '../../components/ResearchInfo.astro'
       User Flow / Wireframe
     </h1>
     <div class='mt-14'>
-      <img class="mx-auto" src={wireFrameImg} alt='User flow / Wireframe' />
+      <img class='w-full' src={wireFrameImg} alt='User flow / Wireframe' />
     </div>
   </Section>
 
