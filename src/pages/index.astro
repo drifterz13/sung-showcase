@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import profilePic from '../images/profile-pic.png'
 import project1Img from '../images/project1.png'
+import project2Img from '../images/project2.png'
 import ProjectPreview from '../components/ProjectPreview.astro'
 import Header from '../layouts/Header.astro'
 
@@ -11,6 +12,17 @@ const project1 = {
   imgSrc: project1Img,
   alt: 'Project 1',
   slug: 'skinique',
+}
+
+const project2 = {
+  title: '02 Room service',
+  description:
+    'A room service application for hotel. Give your guest the best stay in your hotel.',
+  imgSrc: project2Img,
+  alt: 'Project 2',
+  slug: 'room_service',
+  extUrl:
+    'https://www.figma.com/proto/MHl7vqMpCqT4GQdPDrlM5L/Room-Service-Application?node-id=42%3A892&scaling=min-zoom&page-id=42%3A891&starting-point-node-id=42%3A892',
 }
 ---
 
@@ -39,9 +51,7 @@ const project1 = {
       </div>
 
       <aside class='max-sm:mx-auto'>
-        <p
-          class='uppercase text-center tracking-widest mb-2 max-sm:hidden'
-        >
+        <p class='uppercase text-center tracking-widest mb-2 max-sm:hidden'>
           Portfolio
         </p>
         <figure
@@ -69,6 +79,16 @@ const project1 = {
         imgSrc={project1.imgSrc}
         alt={project1.alt}
         slug={project1.slug}
+      />
+
+      <ProjectPreview
+        reverse
+        title={project2.title}
+        description={project2.description}
+        imgSrc={project2.imgSrc}
+        alt={project2.alt}
+        slug={project2.slug}
+        extUrl={project2.extUrl}
       />
     </section>
 
