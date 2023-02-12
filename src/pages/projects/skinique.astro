@@ -17,6 +17,7 @@ import Section from '../../components/Section.astro'
 import OverallDesign from '../../components/OverallDesign.astro'
 import ResearchInfo from '../../components/ResearchInfo.astro'
 import iphoneMockup2 from '../../images/iphone-mockup-2.svg'
+import DashTitle from '../../components/DashTitle.astro'
 ---
 
 <Layout title='Skinique - Project'>
@@ -134,6 +135,10 @@ import iphoneMockup2 from '../../images/iphone-mockup-2.svg'
     <DesignProcess />
   </Section>
 
+  <div class='flex my-28'>
+    <DashTitle title='Empathize' />
+  </div>
+
   <Section>
     <ResearchInfo />
   </Section>
@@ -167,6 +172,10 @@ import iphoneMockup2 from '../../images/iphone-mockup-2.svg'
     </div>
   </Section>
 
+  <div class='flex my-28'>
+    <DashTitle title='Define' />
+  </div>
+
   <Section>
     <h1 class='text-orange font-semibold text-4xl text-center'>User Persona</h1>
     <div class='mt-14'>
@@ -195,12 +204,20 @@ import iphoneMockup2 from '../../images/iphone-mockup-2.svg'
     </div>
   </Section>
 
+  <div class='flex my-28'>
+    <DashTitle title='Ideate' />
+  </div>
+
   <Section>
     <h1 class='text-orange font-semibold text-4xl text-center'>App Map</h1>
     <div class='mt-14'>
       <img class='w-full' src={appMapImg} alt='App map' />
     </div>
   </Section>
+
+  <div class='flex my-28'>
+    <DashTitle title='Prototype' />
+  </div>
 
   <Section>
     <h1 class='text-orange font-semibold text-4xl text-center'>
@@ -210,6 +227,10 @@ import iphoneMockup2 from '../../images/iphone-mockup-2.svg'
       <img class='w-full' src={wireFrameImg} alt='User flow / Wireframe' />
     </div>
   </Section>
+
+  <div class='flex my-28'>
+    <DashTitle title='Design' />
+  </div>
 
   <Section>
     <h1 class='text-orange font-semibold text-4xl text-center'>
